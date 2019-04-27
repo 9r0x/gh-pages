@@ -6,6 +6,6 @@ tags:
 	- B&W
 ---
 
-![Stick](https://ws4.sinaimg.cn/large/006tKfTcly1g0hnhkbp6zj31ox0u0u1b.jpg "11/25/18 Stick @Shukai")
+![Stick](https://i.postimg.cc/JnVjsVWL/Pic-01.jpg "11/25/18 Stick @Shukai")
 
 _F/3.2, ISO 640, 1/8000s, Sony A7RIII, 11/25/18, en route from San Francisco to Los Angeles_
