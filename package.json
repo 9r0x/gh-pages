@@ -16,7 +16,8 @@
     "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.3",
-    "hexo-server": "^0.3.3"
+    "hexo-server": "^0.3.3",
+    "hexo-symbols-count-time": "^0.6.0"
   },
   "scripts": {
     "d": "hexo clean && hexo g && cp -r ../Seichi/seichi-map/build/ ./public/Seichi &&  hexo d"
