@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://9r0x.com/"/>
-  <updated>2019-05-29T16:06:06.749Z</updated>
+  <updated>2019-06-06T16:09:31.475Z</updated>
   <id>https://9r0x.com/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Solfège·唱名·ソルフェージュ</title>
+    <link href="https://9r0x.com/Solfege%C2%B7%E5%94%B1%E5%90%8D%C2%B7%E3%82%BD%E3%83%AB%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B8%E3%83%A5/"/>
+    <id>https://9r0x.com/Solfege·唱名·ソルフェージュ/</id>
+    <published>2019-06-07T06:40:38.000Z</published>
+    <updated>2019-06-06T16:09:31.475Z</updated>
+    
+    <content type="html"><![CDATA[<p>回国在本市一家小琴行的琵琶转bass老师那边听了一节基础课, 结果仍然不是很明白国内音程和调式的原理, 大概也解释了为什么从小没有听懂过音乐课. 就在这几天, 在<a href="https://www.douban.com/note/700851414/" target="_blank" rel="noopener">这篇文章</a>的影响下我发现了些有关音名和唱名的有趣知识, 汇总在此.</p><a id="more"></a><h1 id="Fixed-do-和-Movable-do"><a href="#Fixed-do-和-Movable-do" class="headerlink" title="Fixed do 和 Movable do"></a>Fixed do 和 Movable do</h1><ul><li>Movable do 西洋乐普遍使用了这种代表了C-major音之间距离的表示方式, 所以do-re, re-mi, mi-fa, sol-la, la-ti之间是一个全音, 而fa-sol, ti-do之间是一个半音, 对每个音有升降的<a href="https://en.wikipedia.org/wiki/Solf%C3%A8ge#Movable_do_solf%C3%A8ge" target="_blank" rel="noopener">变体</a></li><li>Fixed do, 直接就对应了C-major, 不只是其之间音程, do=C, re=D, ……同时也忽略了音的升降</li><li>尽管我个人的感觉中国用的是Fixed do, Wikipedia说中国用的也是Moveable do, 我的想法有<a href="https://music.stackexchange.com/questions/4957/what-is-the-relationship-between-do-re-mi-and-note-letter-names" target="_blank" rel="noopener">这个</a>高票的stackexchange回答支持<h1 id="音名-唱名的来源"><a href="#音名-唱名的来源" class="headerlink" title="音名/唱名的来源"></a>音名/唱名的来源</h1></li><li>西洋乐唱名用了<em>Hymn to St. John the Baptist</em>的首字母, 而si因为和sol重复了首字母在十九世纪被改成ti<blockquote><p>Ut queant laxīs  resonāre fībrīs<br>Mīra gestōrum    famulī tuōrum,<br>Solve pollūtī    labiī reātum,<br>Sancte Iōhannēs</p></blockquote></li><li>中国唱名<ol><li>古中乐用的Pentatonic Major(常说的Chinese Scale)用的即宫(Do), 商(Re), 角(Mi), 徵(Sol), 羽(La)</li><li>唐代的工尺谱则记载了七个完整的音: 合、四、一、上、尺、工、凡、六、五、乙</li></ol></li><li>日本的音名ハ(C), ニ(D), ホ(E), ヘ(F), ト(G), イ(A), ロ(B)据说也是收到了中国五音唱名的影响按伊吕波序排列, 不过这一点我没有再验证<h1 id="唱名之间的频率比"><a href="#唱名之间的频率比" class="headerlink" title="唱名之间的频率比"></a>唱名之间的频率比</h1></li><li>P1: 1:1</li><li>m3: 5:6</li><li>M3: 4:5</li><li>P4: 3:4</li><li>P5: 2:3</li><li>P8: 1:2</li><li>关于这一点从之前跟着Jonathan Herrera上课时学到, bass每个音都有其本音(Fundamentals)和之后不断提升的频率和降低的响度的Harmonics组成, 所以轻放手指在E弦12品上, 一边mute一边调音会比直接空弦E更准确.<br><img src="http://www.physicsclassroom.com/Class/sound/u11l5b1.gif" alt="Harmonics"></li></ul><p>顺便吐槽一句, 本市这位老师和我说bass与guitar最初四根弦听起来是一样的真是够了, 而且按品都按在中间真的是guitar天赋太大咱受不起.</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;回国在本市一家小琴行的琵琶转bass老师那边听了一节基础课, 结果仍然不是很明白国内音程和调式的原理, 大概也解释了为什么从小没有听懂过音乐课. 就在这几天, 在&lt;a href=&quot;https://www.douban.com/note/700851414/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这篇文章&lt;/a&gt;的影响下我发现了些有关音名和唱名的有趣知识, 汇总在此.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Music" scheme="https://9r0x.com/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
     <title>无法读诗</title>
     <link href="https://9r0x.com/%E6%97%A0%E6%B3%95%E8%AF%BB%E8%AF%97/"/>
     <id>https://9r0x.com/无法读诗/</id>
     <published>2019-05-30T06:49:32.000Z</published>
-    <updated>2019-05-29T16:06:06.749Z</updated>
+    <updated>2019-05-29T16:28:06.653Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>暮霭沉沉, 她们的眼神/像漂浮在海底的/荧光水母</p></blockquote><p>我不爱好诗, 识字以来自愿读的也少, 连被迫读的记忆中也只剩下些残影. 就像炸虾天妇罗里的秋葵, 番茄火锅汤底里的番茄, 不讨厌但也没有先下筷子的理由. 机缘巧合, 今年倪湛舸的两本诗集又让我好奇起诗和我的关系, 一番思索结论是我不适合读诗, 即使读了也是追求其中肤浅的表面设计和抽象.</p><a id="more"></a><p>我这几年的读的诗集不多, 一下子能回忆起来的只有「白刃的海」, 「雪是谁说的谎」, 「二十亿光年的孤独」, 「恶之花」这几本和课上研读的「The Second Coming」之流. 除去比较喜欢的「白刃的海」, 剩下几本除了刚下肚的兴奋, 现在已经不剩什么味道. 于我, 诗集有点像以「四季便当」代表的菜谱和以「Liquid Intelligence」代表的鸡尾酒教科书, 粗翻一遍总会遇到几页喜欢的, 但要松土一样, 一页页铲过去的压力和期待让人餍足.</p><p>然而就像没事喝两包的板蓝根颗粒, 从小以来诗也不远. 最直接的就是许多体制内的学生经历过的, 一本本的要背熟默写的古诗词. 但我并不讨厌, 初中的时候还和室友找蜀道难和逍遥游来背, 在所谓精英教育的学习间算是极富意义和乐趣的日常休闲. 而据可靠消息, 在我小学一二年级的时候还在水族馆附近的公园野餐时写过诗, 赞美了春天<del>令人作呕的</del>柳絮漫天飞扬和昆虫嗡嗡嗡嗡的美妙景象. 可惜灵光的脑子也没伴随我到现在, 高二挑选‘优秀’学生参加AP Literature课的时候, 分析了一首Lineation十分有趣的poem, 老师鼓励我们在桌上养蛊, 对一首诗面面相觑看谁吐出的东西最多.俗话说“造蛊之法,以百虫置皿中,俾相啖食,其存者为蛊,” 残念我惜墨如金只是微笑点头, 不如说心里更想把有趣的情景拍下来.</p><p>初识倪湛舸是去年暑假读的「夏与西伯利亚」这本文集, 文风和内容结构我颇能认同, 顺手今年寒假读了「白刃的海」, 接着这暑假继续过完了「雪是谁说的谎」. 这两本诗从风格到结构差很多, 如果说前者穷尽了幻想, 那后者就是溢出了2^64 -1的上限反而变得普通. 同时两本也都保持着相似的风格, 比如前者有“兔子不吃喘气的人, 兔子喜欢黑夜里不爱活着的人”而后者有“我们每天死去一点，而人民，人民将永存”这样的文字戏法.</p><p>我觉得无法读诗的主要理由是结构性知识的缺乏. 好似想象用手吃火锅的印度人, 没有工具而无从下口, 因此“过去和未来是接通就烧断的电路板”会比“而我所能想象的爱, 夏夜的金盏花那样薄, 洪水开闸, 薄的瓷胎在星光下历历爆裂, 天啊, 怎样哭都没有用, 生活无需装饰, 正如痛苦不会等待糖霜消融”更有回响. 正如作者自己所言“也许我已经没有信仰了, 但我却又无时不日地纠结于那些富有宗教意味的事物,” 读这两本的主观感受欺负了叙事性分析, 诗带来的模糊使我没办法好好享受这过程.</p><p>「爱丽丝镜中奇遇记」里独角兽说镜子里世界的蛋糕只有端起来绕一圈才能被自动切开成三分, 同样的文字也自己决定它们的意义. 一方面不想主动地扰乱阅读时整体的流动, 而要我把自己交给“关闭栅栏时, 要记得放猫进来/为了和人一同生活/生活的另一面有巨大的老虎/它经过的地方, 花都得到了解放”来产生意义也十分勉强.</p>]]></content>
     
