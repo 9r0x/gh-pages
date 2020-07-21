@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png?v=7.1.1">
+
+
+  <link rel="mask-icon" href="/favicon.png?v=7.1.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.1.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Darknet目前是基于Yolo_v4的物体识别框架, 因为网络模型简单, 识别速度精度高, 兼容性好, 文档齐全, 社区活跃等原因对新手友好相对而广泛使用. 这里我介绍使用中文标签的方法.">
+<meta name="keywords" content="Project,Notes">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Darknet中文化标签">
+<meta property="og:url" content="https://9r0x.com/Darknet中文化标签/index.html">
+<meta property="og:site_name" content="The Electronic Divination Machine">
+<meta property="og:description" content="Darknet目前是基于Yolo_v4的物体识别框架, 因为网络模型简单, 识别速度精度高, 兼容性好, 文档齐全, 社区活跃等原因对新手友好相对而广泛使用. 这里我介绍使用中文标签的方法.">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.postimg.cc/2SYXtphc/Pic-01.jpg">
+<meta property="og:image" content="https://i.postimg.cc/pTFnFLkq/Pic-02.png">
+<meta property="og:updated_time" content="2020-07-21T06:23:23.695Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Darknet中文化标签">
+<meta name="twitter:description" content="Darknet目前是基于Yolo_v4的物体识别框架, 因为网络模型简单, 识别速度精度高, 兼容性好, 文档齐全, 社区活跃等原因对新手友好相对而广泛使用. 这里我介绍使用中文标签的方法.">
+<meta name="twitter:image" content="https://i.postimg.cc/2SYXtphc/Pic-01.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="The Electronic Divination Machine" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://9r0x.com/Darknet中文化标签/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Darknet中文化标签 | The Electronic Divination Machine</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">The Electronic Divination Machine</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">I've decided, She said, that I probably need more than an aspirin</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://9r0x.com/Darknet中文化标签/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Shukai Ni">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="The Electronic Divination Machine">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Darknet中文化标签
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-07-21 10:18:16" itemprop="dateCreated datePublished" datetime="2020-07-21T10:18:16-07:00">2020-07-21</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">3.2k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">3 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Darknet目前是基于Yolo_v4的物体识别框架, 因为网络模型简单, 识别速度精度高, 兼容性好, 文档齐全, 社区活跃等原因对新手友好相对而广泛使用. 这里我介绍使用中文标签的方法.</p>
+<p><img src="https://i.postimg.cc/2SYXtphc/Pic-01.jpg" alt="Darknet 中文化标签" title="Darknet with Chinese label"></p>
+<a id="more"></a>
+<h1 id="中文化的原理"><a href="#中文化的原理" class="headerlink" title="中文化的原理"></a>中文化的原理</h1><p>Darknet使用字符图片拼接的方法, 例如cat是c a t各自的label连接而成. 中文远不止26个英文字符(及符号), 所以这里采用了简易的的class label, 好处是图片是静态生成的, 一次生成多次使用, 坏处是不能动态地根据可用class来生成对应labels.</p>
+<h2 id="获取-Darknet"><a href="#获取-Darknet" class="headerlink" title="获取 Darknet"></a>获取 Darknet</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/AlexeyAB/darknet.git</span><br></pre></td></tr></table></figure>
+<h2 id="labels生成代码"><a href="#labels生成代码" class="headerlink" title="labels生成代码"></a>labels生成代码</h2><h3 id="类别名称"><a href="#类别名称" class="headerlink" title="类别名称"></a>类别名称</h3><p>将你的<code>.names</code>文件修改为中文, 本文以<code>data/obj.names</code>为例</p>
+<h3 id="安装imagemagick"><a href="#安装imagemagick" class="headerlink" title="安装imagemagick"></a>安装imagemagick</h3><ul>
+<li>Mac</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install imagemagick</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Linux</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">wget https://www.imagemagick.org/download/ImageMagick.tar.gz</span><br><span class="line">tar xf ImageMagick.tar.gz</span><br><span class="line">cd ImageMagick-*</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br><span class="line">ldconfig /usr/local/lib</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Windows<br><a href="https://imagemagick.org/download/binaries/ImageMagick-7.0.10-24-Q16-HDRI-x64-dll.exe" target="_blank" rel="noopener">Win64安装包</a><br><a href="https://aka.ms/vs/16/release/vc_redist.x64.exe" target="_blank" rel="noopener">VC++</a></li>
+</ul>
+<h3 id="生成标签"><a href="#生成标签" class="headerlink" title="生成标签"></a>生成标签</h3><p>删除darknet/data/labels里所有内容, 新建<code>make_labels.py</code>, 内容如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line"></span><br><span class="line"># 字体位置</span><br><span class="line">f = &quot;/System/Library/Fonts/Supplemental/Songti.ttc&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">l = []</span><br><span class="line">with open(&quot;../obj.names&quot;) as list_in:</span><br><span class="line">    for line in list_in:</span><br><span class="line">        l.append(line[:-1])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def make_labels(s):</span><br><span class="line">    for idx, cls in enumerate(l):</span><br><span class="line">        os.system(&quot;convert -fill black -background white -bordercolor white -border 4 -font %s -pointsize %d label:\&quot;%s\&quot; \&quot;%d_%d.png\&quot;&quot; % (f, s, cls, idx, s/12-1))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">for i in [12, 24, 36, 48, 60, 72, 84, 96]:</span><br><span class="line">    make_labels(i)</span><br></pre></td></tr></table></figure>
+<p>修改完字体位置后运行<code>python make_labels.py</code>即可.<br><img src="https://i.postimg.cc/pTFnFLkq/Pic-02.png" alt="标签图" title="Label images"></p>
+<h1 id="修改源代码"><a href="#修改源代码" class="headerlink" title="修改源代码"></a>修改源代码</h1><h2 id="src-Image-c"><a href="#src-Image-c" class="headerlink" title="src/Image.c"></a>src/Image.c</h2><p>这一步让darknet从找字符label变为找class label.</p>
+<ol>
+<li>修改<code>get_label_v3</code>函数为 </li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">image get_label_v3(image **characters, char *labelindex, int size)</span><br><span class="line">&#123;</span><br><span class="line">    size = size / 10;</span><br><span class="line">    if (size &gt; 7) size = 7;</span><br><span class="line">    image label = make_empty_image(0, 0, 0);</span><br><span class="line">    int class, i = 0, nlabels = 1;</span><br><span class="line">    int len = strlen(labelindex);</span><br><span class="line">    for(i = 0; i &lt; len; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if (labelindex[i] == &apos;,&apos;) ++nlabels;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    for(i = 0; i &lt; nlabels; i++)&#123;</span><br><span class="line">        class = atoi(labelindex);</span><br><span class="line">        image l = characters[size][class];</span><br><span class="line">        image n = tile_images(label, l, -size - 1 + (size + 1) / 2);</span><br><span class="line">        free_image(label);</span><br><span class="line">        label = n;</span><br><span class="line">        labelindex=strchr(labelindex, &apos;,&apos;) + 1;</span><br><span class="line">    &#125;</span><br><span class="line">    image b = border_image(label, label.h*.02);</span><br><span class="line">    free_image(label);</span><br><span class="line">    return b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>新建<code>**load_labels</code>函数以加载标签图, 建议在<code>**load_alphabet()</code>附近添加, 方便维护.</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">image **load_labels(int classes)</span><br><span class="line">&#123;</span><br><span class="line">    int i, j;</span><br><span class="line">    const int nsize = 8;</span><br><span class="line">    image** alphabets = (image**)xcalloc(nsize, sizeof(image*));</span><br><span class="line">    for(j = 0; j &lt; nsize; ++j)&#123;</span><br><span class="line">        alphabets[j] = (image*)xcalloc(classes, sizeof(image));</span><br><span class="line">        for(i = 0; i &lt; classes; ++i)&#123;</span><br><span class="line">            char buff[256];</span><br><span class="line">            sprintf(buff, &quot;data/labels/%d_%d.png&quot;, i, j);</span><br><span class="line">            alphabets[j][i] = load_image_color(buff, 0, 0);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return alphabets;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>在<code>draw_detections_v3</code>下寻找<code>if (alphabet) {</code>语句, 并修改其内容为</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">if (alphabet) &#123;</span><br><span class="line">  char labelindex[100] = &#123;0&#125;;</span><br><span class="line">  char class[10] = &#123;0&#125;;</span><br><span class="line">  sprintf(class, &quot;%d&quot;, selected_detections[i].best_class);</span><br><span class="line">  strcat(labelindex, class);</span><br><span class="line">  int j;</span><br><span class="line">  for (j = 0; j &lt; classes; ++j) &#123;</span><br><span class="line">    if (selected_detections[i].det.prob[j] &gt; thresh &amp;&amp; j != selected_detections[i].best_class) &#123;</span><br><span class="line">      strcat(labelindex, &quot;, &quot;);</span><br><span class="line">      sprintf(class, &quot;%d&quot;, j);</span><br><span class="line">      strcat(labelindex, class);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  image label = get_label_v3(alphabet, labelindex, (im.h*.01));</span><br><span class="line">  draw_weighted_label(im, top + width, left, label, rgb, 0.7);</span><br><span class="line">  free_image(label);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="src-Image-h"><a href="#src-Image-h" class="headerlink" title="src/Image.h"></a>src/Image.h</h2><ol>
+<li>为了声明新建的<code>**load_labels</code>函数, 在<code>image **load_alphabet();</code>下一行添加</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">image **load_labels(int);</span><br></pre></td></tr></table></figure>
+<h2 id="src-Detector-c"><a href="#src-Detector-c" class="headerlink" title="src/Detector.c"></a>src/Detector.c</h2><ol>
+<li>替换标签图加载函数, 把<code>image **alphabet = load_alphabet();</code>替换为</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">image **alphabet = load_labels(names_size);</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>修改释放变量的范围, 在<code>test_detector</code>函数下寻找<code>for (i = 32; i &lt; 127; ++i) {</code>替换为</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for (i = 0; i &lt; names_size; ++i) &#123;</span><br></pre></td></tr></table></figure>
+<h2 id="类别名称乱码处理"><a href="#类别名称乱码处理" class="headerlink" title="类别名称乱码处理"></a>类别名称乱码处理</h2><p>Windows下类别名称文件<code>obj.names</code>使用GB2312保存, *nix下则使用UTF-8保存.</p>
+<h1 id="进行识别"><a href="#进行识别" class="headerlink" title="进行识别"></a>进行识别</h1><p>至此中文化就完成了, 可以<code>make</code>后进行图像识别.</p>
+<p>仓库链接: <a href="https://github.com/9r0x/darknet/commit/8da809d3f31c47d8766180fa2081c5e2325dc19c" target="_blank" rel="noopener">Github</a></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Project/" rel="tag"># Project</a>
+          
+            <a href="/tags/Notes/" rel="tag"># Notes</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/捕捉光的技术/" rel="next" title="捕捉光的技术">
+                <i class="fa fa-chevron-left"></i> 捕捉光的技术
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Shukai Ni</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#中文化的原理"><span class="nav-number">1.</span> <span class="nav-text">中文化的原理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#获取-Darknet"><span class="nav-number">1.1.</span> <span class="nav-text">获取 Darknet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#labels生成代码"><span class="nav-number">1.2.</span> <span class="nav-text">labels生成代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#类别名称"><span class="nav-number">1.2.1.</span> <span class="nav-text">类别名称</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装imagemagick"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装imagemagick</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成标签"><span class="nav-number">1.2.3.</span> <span class="nav-text">生成标签</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改源代码"><span class="nav-number">2.</span> <span class="nav-text">修改源代码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#src-Image-c"><span class="nav-number">2.1.</span> <span class="nav-text">src/Image.c</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#src-Image-h"><span class="nav-number">2.2.</span> <span class="nav-text">src/Image.h</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#src-Detector-c"><span class="nav-number">2.3.</span> <span class="nav-text">src/Detector.c</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类别名称乱码处理"><span class="nav-number">2.4.</span> <span class="nav-text">类别名称乱码处理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#进行识别"><span class="nav-number">3.</span> <span class="nav-text">进行识别</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-plug"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Shukai Ni</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">20k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长">18 分钟</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.1"></script>
+
+  <script src="/js/motion.js?v=7.1.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.1"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
